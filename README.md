@@ -1,2 +1,2 @@
 # Arcanoaster
- Wizards, sorcerers, masters of arcane. Which mage will 
+ Wizards, sorcerers, masters of arcane. Which mage will stand at the summit...
