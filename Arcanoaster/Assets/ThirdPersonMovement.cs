@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour{
     public CharacterController controller;
     public float speed = 6f;
+    public float turnSmooth = 0.1f;
     // Update is called once per frame
     void Update(){
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -15,7 +16,6 @@ public class ThirdPersonMovement : MonoBehaviour{
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f,targetAngle,0f);
             controller.Move(direction * speed * Time.deltaTime);
-        }
-        
+        } 
     }
 }
